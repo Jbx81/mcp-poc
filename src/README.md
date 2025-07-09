@@ -4,16 +4,16 @@ A comprehensive boilerplate for creating Model Context Protocol (MCP) servers us
 
 ## Features
 
-- **Tools**: Example implementations for echo, time, and calculation tools
-- **Resources**: Server information and status resources
-- **Prompts**: Greeting and concept explanation prompts
-- **Error Handling**: Robust error handling throughout
-- **Stdio Transport**: Uses stdio for communication with MCP clients
+- **Tools**: tbd
+- **Resources**: tbd
+- **Prompts**: tbd
+- **Error Handling**: tbd
+- **Stdio Transport**: tbd
 
 ## Installation
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## Usage
@@ -21,13 +21,13 @@ npm install
 ### Starting the Server
 
 ```bash
-npm start
+pnpm start
 ```
 
 or
 
 ```bash
-node server.js
+ts-node src/index.ts
 ```
 
 ### Example Tools
@@ -53,14 +53,16 @@ The server uses ES modules and requires Node.js 18+.
 ### File Structure
 
 ```
-├── server.js          # Main server implementation
-├── package.json       # Dependencies and scripts
-└── README.md          # This file
+├──src
+  ├── index.ts           # Main server implementation
+  ├── package.json       # Dependencies and scripts
+  └── README.md          # This file
 ```
 
 ### Extending the Server
 
-To add new tools, modify the `setupToolHandlers()` method:
+TBD
+<!-- To add new tools, modify the `setupToolHandlers()` method:
 
 ```javascript
 // Add to ListToolsRequestSchema handler
@@ -87,7 +89,7 @@ case 'my_tool':
       },
     ],
   };
-```
+``` -->
 
 ## MCP Protocol
 
@@ -104,4 +106,4 @@ You can test the server using any MCP-compatible client or the MCP CLI tools.
 
 ## License
 
-MIT
+ISC
